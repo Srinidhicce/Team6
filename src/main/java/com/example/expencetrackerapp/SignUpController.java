@@ -10,19 +10,15 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
-public class ExpensePage{
+public class SignUpController {
     @FXML
     public Button submitButton;
-
     @FXML
-    private void openIncomePage(ActionEvent actionEvent) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("Income1.fxml"));
+    protected void openExpensePage(ActionEvent actionEvent) throws IOException {
+        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("expense.fxml"));
         Parent root = fxmlLoader.load();
         Stage primaryStage = (Stage) submitButton.getScene().getWindow();
         primaryStage.setScene(new Scene(root));
         primaryStage.show();
-    }
-
-    public void openExpensePage(ActionEvent actionEvent) {
     }
 }
