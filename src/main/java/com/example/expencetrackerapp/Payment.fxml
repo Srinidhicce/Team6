@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.gluonhq.charm.glisten.control.AutoCompleteTextField?>
+<?import com.gluonhq.charm.glisten.control.TextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TreeTableColumn?>
+<?import javafx.scene.control.TreeTableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="409.0" prefWidth="726.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.expencetrackerapp.Payment">
+   <children>
+      <BorderPane prefHeight="409.0" prefWidth="726.0">
+         <right>
+            <ImageView fitHeight="442.0" fitWidth="358.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+               <image>
+                  <Image url="@../../../../../../../../Desktop/payment.png" />
+               </image>
+            </ImageView>
+         </right>
+         <left>
+            <AnchorPane prefHeight="409.0" prefWidth="385.0" BorderPane.alignment="CENTER">
+               <children>
+                  <TabPane prefHeight="409.0" prefWidth="385.0" tabClosingPolicy="UNAVAILABLE">
+                    <tabs>
+                      <Tab text="Income">
+                        <content>
+                          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                 <children>
+                                    <TreeTableView layoutX="10.0" layoutY="8.0" prefHeight="245.0" prefWidth="345.0">
+                                      <columns>
+                                        <TreeTableColumn prefWidth="75.0" text="Date" />
+                                        <TreeTableColumn prefWidth="75.0" text="Description" />
+                                      </columns>
+                                    </TreeTableView>
+                                 </children>
+                              </AnchorPane>
+                        </content>
+                      </Tab>
+                      <Tab text="Expence">
+                        <content>
+                          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                 <children>
+                                    <Label layoutX="31.0" layoutY="22.0" prefHeight="17.0" prefWidth="62.0" text="Day1">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="31.0" layoutY="93.0" prefHeight="17.0" prefWidth="62.0" text="Day3">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="31.0" layoutY="57.0" prefHeight="17.0" prefWidth="62.0" text="Day2">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="31.0" layoutY="160.0" prefHeight="17.0" prefWidth="62.0" text="Day5">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="31.0" layoutY="128.0" prefHeight="17.0" prefWidth="62.0" text="Day4">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="31.0" layoutY="194.0" prefHeight="17.0" prefWidth="62.0" text="Day6">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                    </Label>
+                                    <TextField layoutX="93.0" layoutY="18.0" />
+                                    <TextField layoutX="93.0" layoutY="156.0" />
+                                    <TextField layoutX="92.0" layoutY="53.0" />
+                                    <TextField layoutX="93.0" layoutY="89.0" />
+                                    <TextField layoutX="93.0" layoutY="124.0" />
+                                    <TextField layoutX="93.0" layoutY="190.0" />
+                                    <AutoCompleteTextField layoutX="118.0" layoutY="255.0" />
+                                 </children>
+                              </AnchorPane>
+                        </content>
+                      </Tab>
+                    </tabs>
+                  </TabPane>
+               </children>
+            </AnchorPane>
+         </left>
+      </BorderPane>
+   </children>
+</AnchorPane>
